@@ -21,3 +21,6 @@ phx_shadcn-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Version manager files
+.tool-versions
