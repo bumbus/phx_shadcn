@@ -132,17 +132,54 @@ user preference, etc.
 
 ## Components
 
-### T1 — Static (15)
-Badge, Button, Card, Separator, Skeleton, Alert, Avatar, AspectRatio, Label,
-Input, Textarea, Table, Breadcrumb, Pagination, Checkbox
+39 components across 3 tiers. All complete except NavigationMenu and some T4 composites.
 
-### T2 — Interactive (11)
-Accordion, Collapsible, Tabs, Toggle, ToggleGroup, Switch, RadioGroup,
-Progress, Slider, ScrollArea, Form + FormField
-
-### T3 — Advanced (13)
-Dialog, AlertDialog, Sheet, Popover, Tooltip, HoverCard, DropdownMenu,
-ContextMenu, Menubar, Select, InputOTP, Toast
+| Component | Tier | Status | Notes |
+|-----------|------|--------|-------|
+| Badge | T1 | done | Variants: default, secondary, destructive, outline |
+| Button | T1 | done | Variants + sizes. `phx-click-loading` styles. |
+| Card | T1 | done | Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter |
+| Separator | T1 | done | Horizontal / vertical |
+| Skeleton | T1 | done | Pulsing placeholder |
+| Alert | T1 | done | Alert, AlertTitle, AlertDescription. Variants: default, destructive |
+| Avatar | T1 | done | Avatar, AvatarImage, AvatarFallback, AvatarGroup |
+| AspectRatio | T1 | done | CSS-only ratio wrapper |
+| Label | T1 | done | Styled `<label>` with `for` support |
+| Input | T1 | done | Styled `<input>` with form integration |
+| Textarea | T1 | done | Styled `<textarea>` |
+| Table | T1 | done | Table, TableHeader, TableBody, TableRow, TableHead, TableCell, etc. |
+| Breadcrumb | T1 | done | BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator |
+| Pagination | T1 | done | PaginationContent, PaginationItem, PaginationLink, PaginationEllipsis |
+| Checkbox | T1 | done | Native `<input type="checkbox">` with custom styling. Form integration. |
+| Accordion | T2 | done | Single/multiple, collapsible, 3 state modes, animation |
+| Collapsible | T2 | done | Reuses Accordion's JS hook |
+| Tabs | T2 | done | 3 state modes + patch mode (URL-driven). Roving tabindex. |
+| Toggle | T2 | done | Variants: default/outline. Sizes: default/sm/lg. |
+| ToggleGroup | T2 | done | Single/multiple selection, event delegation |
+| Switch | T2 | done | Track + thumb, form integration via hidden input |
+| RadioGroup | T2 | done | Arrow-key nav, `role="radiogroup"`, form integration |
+| Progress | T2 | done | Determinate + indeterminate. `role="progressbar"`. |
+| Slider | T2 | done | Drag + arrow keys, min/max/step |
+| ScrollArea | T2 | done | Custom styled scrollbar |
+| Form + FormField | T2 | done | Composable primitives + convenience wrapper |
+| Dialog | T3 | done | Native `<dialog>`, focus trap, scroll lock |
+| AlertDialog | T3 | done | Like Dialog but no backdrop dismiss, `role="alertdialog"` |
+| Sheet | T3 | done | Side-sliding panel (top/right/bottom/left) |
+| Popover | T3 | done | Floating UI positioning with flip/shift |
+| Tooltip | T3 | done | Hover/focus triggered, arrow element |
+| HoverCard | T3 | done | Hover-triggered popover |
+| DropdownMenu | T3 | done | Floating + roving focus + typeahead. Checkbox/radio items. |
+| ContextMenu | T3 | done | Right-click triggered, sub-menus |
+| Menubar | T3 | done | Multi-menu coordination, hover-to-switch |
+| Select | T3 | done | Custom styled select, typeahead, form integration |
+| InputOTP | T3 | done | Single `<input>` overlaid on visual slots. Pattern presets. |
+| Toast | T3 | done | Sonner-style stacked toasts, swipe-to-dismiss |
+| NavigationMenu | T3 | planned | Complex hover timing, viewport animation |
+| Command | T4 | planned | Search/filter UI (like cmdk) |
+| Calendar | T4 | planned | Date grid, range selection |
+| Sidebar | T4 | planned | Responsive sidebar with mobile sheet |
+| Carousel | T4 | planned | Touch/swipe, snap points |
+| Resizable | T4 | planned | Drag-to-resize panels |
 
 ## State Modes
 

@@ -2,7 +2,7 @@ defmodule PhxShadcn.MixProject do
   use Mix.Project
 
   @version "0.1.0"
-  @source_url "https://github.com/phx-shadcn/phx_shadcn"
+  @source_url "https://github.com/bumbus/phx_shadcn"
 
   def project do
     [

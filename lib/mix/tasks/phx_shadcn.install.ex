@@ -52,7 +52,7 @@ if Code.ensure_loaded?(Igniter) do
       Next steps:
         1. Run `mix deps.get` if you haven't already
         2. Add `class="dark"` to your <html> tag to enable dark mode
-        3. Visit https://github.com/phx-shadcn/phx_shadcn for component docs
+        3. Visit https://github.com/bumbus/phx_shadcn for component docs
       """)
     end
 
