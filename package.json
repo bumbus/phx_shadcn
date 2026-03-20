@@ -1,0 +1,7 @@
+{
+  "name": "phx_shadcn",
+  "version": "0.1.0",
+  "main": "./priv/static/hooks/index.js",
+  "module": "./priv/static/hooks/index.js",
+  "type": "module"
+}
